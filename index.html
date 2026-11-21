@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRSPTU CampusFind | Lost & Found</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <a class="brand" href="index.html">
+    <span class="brand-mark">⌕</span>
+    MRSPTU <span class="brand-accent">CampusFind</span>
+  </a>
+
+  <nav class="nav-links">
+    <a class="active" href="index.html">Home</a>
+    <a href="lost-items.html">Lost Items</a>
+    <a href="found-items.html">Found Items</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="btn btn-ghost" href="login.html">Log in</a>
+    <a class="btn btn-dark" href="register.html">
+      Get Started <span>↗</span>
+    </a>
+  </div>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span class="pulse"></span>
+        YOUR CAMPUS COMMUNITY
+      </div>
+
+      <h1>
+        Lost something?<br>
+        <span>Let's find it.</span>
+      </h1>
+
+      <p class="hero-copy">
+        A simple way for students to reunite with their lost belongings.
+        Search what others have found—or report an item you've lost.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="report.html?type=Lost" class="btn btn-dark btn-large">
+          Report Lost Item <span>↗</span>
+        </a>
+
+        <a href="report.html?type=Found" class="btn btn-light btn-large">
+          Report Found Item
+        </a>
+      </div>
+
+      <div class="hero-note">
+        <span class="avatar-stack">
+          <i>👤</i>
+          <i>👤</i>
+          <i>👤</i>
+        </span>
+        Built for a safer, helpful campus community
+      </div>
+
+    </div>
+
+    <!-- HERO VISUAL -->
+    <div class="hero-visual">
+
+      <div class="visual-orbit orbit-one"></div>
+      <div class="visual-orbit orbit-two"></div>
+
+      <div class="floating-card card-main">
+
+        <div class="item-photo headphones">🎧</div>
+
+        <div class="card-top">
+          <span class="status status-found">FOUND</span>
+          <span class="dots">•••</span>
+        </div>
+
+        <h3>Wireless Headphones</h3>
+        <p>Library · Yesterday</p>
+
+        <div class="card-bottom">
+          <span>📍 Central Library</span>
+          <span class="arrow-circle">↗</span>
+        </div>
+
+      </div>
+
+      <div class="floating-card mini-card mini-left">
+        <span class="mini-icon">🔑</span>
+        <div>
+          <strong>Keys found!</strong>
+          <small>Sports Complex</small>
+        </div>
+      </div>
+
+      <div class="floating-card mini-card mini-right">
+        <span class="mini-icon">📚</span>
+        <div>
+          <strong>Book returned</strong>
+          <small>Engineering Block</small>
+        </div>
+      </div>
+
+      <div class="sparkle sparkle-a">✦</div>
+      <div class="sparkle sparkle-b">✧</div>
+
+    </div>
+
+  </section>
+
+  <!-- SEARCH SECTION -->
+  <section class="search-section">
+
+    <div class="search-box">
+
+      <span class="search-icon">⌕</span>
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search for an item, e.g. wallet, ID card, keys..."
+        aria-label="Search items"
+      >
+
+      <select id="categoryFilter" aria-label="Filter category">
+        <option value="">All categories</option>
+        <option>Electronics</option>
+        <option>Documents</option>
+        <option>Accessories</option>
+        <option>Books</option>
+        <option>Other</option>
+      </select>
+
+      <button id="searchButton" class="btn btn-dark">
+        Search
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- RECENT ITEMS -->
+  <section class="section items-section">
+
+    <div class="section-heading">
+
+      <div>
+        <div class="eyebrow">COMMUNITY BOARD</div>
+        <h2>Recently reported</h2>
+        <p>Items reported by students around campus.</p>
+      </div>
+
+      <a class="text-link" href="lost-items.html">
+        View all items <span>→</span>
+      </a>
+
+    </div>
+
+    <div class="item-grid" id="itemGrid">
+
+      <article class="item-tile"
+        data-category="Electronics"
+        data-name="wireless headphones">
+
+        <div class="tile-image tile-purple">
+          <span class="status status-found">FOUND</span>
+          <span class="tile-emoji">🎧</span>
+        </div>
+
+        <div class="tile-info">
+          <div class="tile-category">ELECTRONICS</div>
+          <h3>Wireless Headphones</h3>
+          <p>📍 Central Library · Nov 20</p>
+        </div>
+
+      </article>
+
+      <article class="item-tile"
+        data-category="Documents"
+        data-name="student id card">
+
+        <div class="tile-image tile-yellow">
+          <span class="status status-lost">LOST</span>
+          <span class="tile-emoji">🪪</span>
+        </div>
+
+        <div class="tile-info">
+          <div class="tile-category">DOCUMENTS</div>
+          <h3>Student ID Card</h3>
+          <p>📍 Canteen · Nov 19</p>
+        </div>
+
+      </article>
+
+      <article class="item-tile"
+        data-category="Accessories"
+        data-name="black wallet">
+
+        <div class="tile-image tile-green">
+          <span class="status status-found">FOUND</span>
+          <span class="tile-emoji">👛</span>
+        </div>
+
+        <div class="tile-info">
+          <div class="tile-category">ACCESSORIES</div>
+          <h3>Black Wallet</h3>
+          <p>📍 Sports Ground · Nov 18</p>
+        </div>
+
+      </article>
+
+      <article class="item-tile"
+        data-category="Books"
+        data-name="programming book">
+
+        <div class="tile-image tile-blue">
+          <span class="status status-lost">LOST</span>
+          <span class="tile-emoji">📘</span>
+        </div>
+
+        <div class="tile-info">
+          <div class="tile-category">BOOKS</div>
+          <h3>Programming Book</h3>
+          <p>📍 Block A · Nov 17</p>
+        </div>
+
+      </article>
+
+    </div>
+
+    <p class="empty-state" id="emptyState" hidden>
+      No matching items found. Try another search.
+    </p>
+
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-section">
+
+    <div>
+      <div class="eyebrow">MAKE A DIFFERENCE</div>
+      <h2>Found something that isn't yours?</h2>
+      <p>One small report could make someone's day.</p>
+    </div>
+
+    <a href="report.html?type=Found" class="btn btn-white btn-large">
+      Report a found item <span>↗</span>
+    </a>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <a class="brand" href="index.html">
+    MRSPTU <span class="brand-accent">CampusFind</span>
+  </a>
+
+  <p>Helping campus belongings find their way home.</p>
+
+  <p class="creator-credit">
+    Created and developed by <strong>Mohit Joshi</strong>
+  </p>
+
+  <span>
+    © 2026 MRSPTU CampusFind. All rights reserved.
+    Original project and website design by Mohit Joshi.
+  </span>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase-config.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

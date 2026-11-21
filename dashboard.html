@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Reports | MRSPTU CampusFind</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">⌕</span>
+    MRSPTU <span class="brand-accent">CampusFind</span>
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="lost-items.html">Lost Items</a>
+    <a href="found-items.html">Found Items</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button id="logoutBtn" class="btn btn-ghost">Log out</button>
+  </div>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+</header>
+
+<main class="listing-page">
+  <div class="form-shell">
+
+    <div class="form-heading">
+      <div class="eyebrow">YOUR ACCOUNT</div>
+      <h1>My Reports</h1>
+      <p>
+        Welcome, <strong id="welcomeName"></strong>.
+        Manage the items you have reported.
+      </p>
+    </div>
+
+    <div id="myReports" class="cf-manage-list"></div>
+
+    <a class="btn btn-dark" href="report.html">+ Create report</a>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div>
+    <a class="brand" href="index.html">
+      MRSPTU <span class="brand-accent">CampusFind</span>
+    </a>
+
+    <p>Helping campus belongings find their way home.</p>
+
+    <p class="creator-credit">
+      Created and developed by <strong>Mohit Joshi</strong>
+    </p>
+
+    <span>
+      © 2026 MRSPTU CampusFind. All rights reserved.
+      Original project and website design by Mohit Joshi.
+    </span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase-config.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

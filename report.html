@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Item | MRSPTU CampusFind</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <a class="brand" href="index.html">
+    <span class="brand-mark">⌕</span>
+    MRSPTU <span class="brand-accent">CampusFind</span>
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="lost-items.html">Lost Items</a>
+    <a href="found-items.html">Found Items</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="btn btn-ghost" href="index.html">Back to Home</a>
+  </div>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+</header>
+
+<main class="form-page">
+
+  <a href="index.html" class="back-link">← Back to homepage</a>
+
+  <div class="form-shell">
+
+    <div class="form-heading">
+      <div class="eyebrow">HELP YOUR CAMPUS COMMUNITY</div>
+      <h1>Report an item</h1>
+      <p>
+        Share the details so the owner—or finder—can reconnect
+        with their belongings.
+      </p>
+    </div>
+
+    <form class="report-form" id="reportForm">
+
+      <div class="field full">
+        <label>Report type</label>
+
+        <div class="type-choice">
+          <label>
+            <input type="radio" name="type" value="Lost" checked>
+            I lost an item
+          </label>
+
+          <label>
+            <input type="radio" name="type" value="Found">
+            I found an item
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="itemName">Item name *</label>
+        <input
+          id="itemName"
+          name="itemName"
+          required
+          placeholder="e.g. Black wallet"
+        >
+      </div>
+
+      <div class="field">
+        <label for="category">Category *</label>
+
+        <select id="category" name="category" required>
+          <option value="">Select category</option>
+          <option>Electronics</option>
+          <option>Documents</option>
+          <option>Accessories</option>
+          <option>Books</option>
+          <option>Clothing</option>
+          <option>Keys</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="location">Location *</label>
+        <input
+          id="location"
+          name="location"
+          required
+          placeholder="Where was it lost/found?"
+        >
+      </div>
+
+      <div class="field">
+        <label for="date">Date *</label>
+        <input
+          id="date"
+          name="date"
+          type="date"
+          required
+        >
+      </div>
+
+      <div class="field full">
+        <label for="description">Description *</label>
+        <textarea
+          id="description"
+          name="description"
+          required
+          placeholder="Describe the item, colour, brand, identifying details..."
+        ></textarea>
+      </div>
+
+      <div class="field">
+        <label for="contactName">Your name *</label>
+        <input
+          id="contactName"
+          name="contactName"
+          required
+          placeholder="Name"
+        >
+      </div>
+
+      <div class="field">
+        <label for="contact">Contact (email or phone) *</label>
+        <input
+          id="contact"
+          name="contact"
+          required
+          placeholder="How can someone contact you?"
+        >
+      </div>
+
+      <div class="field full">
+        <label for="photo">Item photo (optional)</label>
+        <input
+          id="photo"
+          name="photo"
+          type="file"
+          accept="image/*"
+        >
+      </div>
+
+      <div class="form-message" id="formMessage">
+        ✓ Report saved in this browser! This is a demo version.
+      </div>
+
+      <button class="btn btn-dark btn-large form-submit" type="submit">
+        Submit Report <span>↗</span>
+      </button>
+
+    </form>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+
+  <div>
+    <a class="brand" href="index.html">
+      MRSPTU <span class="brand-accent">CampusFind</span>
+    </a>
+
+    <p>Helping campus belongings find their way home.</p>
+  </div>
+
+  <div class="creator-credit">
+    Created and developed by <strong>Mohit Joshi</strong>
+    <br>
+    © 2026 MRSPTU CampusFind. All rights reserved.
+    <br>
+    Original project and website design by Mohit Joshi.
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase-config.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

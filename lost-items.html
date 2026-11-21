@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lost Items | MRSPTU CampusFind</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-list-type="lost">
+
+<header class="navbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">⌕</span>
+    MRSPTU <span class="brand-accent">CampusFind</span>
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="lost-items.html">Lost Items</a>
+    <a href="found-items.html">Found Items</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="btn btn-ghost" href="login.html">Log in</a>
+    <a class="btn btn-dark" href="register.html">Get Started</a>
+  </div>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+</header>
+
+<main class="listing-page">
+
+  <a class="back-link" href="index.html">← Back to home</a>
+
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">CAMPUS COMMUNITY BOARD</div>
+      <h2>Lost Items</h2>
+      <p>Browse items students are looking for.</p>
+    </div>
+
+    <a class="btn btn-dark" href="report.html?type=Lost">
+      Report item ↗
+    </a>
+  </div>
+
+  <div class="search-box">
+    <span class="search-icon">⌕</span>
+
+    <input
+      id="searchInput"
+      type="search"
+      placeholder="Search name, location or description"
+    >
+
+    <select id="categoryFilter">
+      <option value="">All categories</option>
+      <option>Electronics</option>
+      <option>Documents</option>
+      <option>Accessories</option>
+      <option>Books</option>
+      <option>Clothing</option>
+      <option>Keys</option>
+      <option>Other</option>
+    </select>
+
+    <button id="searchButton" class="btn btn-dark">Search</button>
+  </div>
+
+  <div class="item-grid" id="itemGrid"></div>
+
+  <p id="emptyState" class="empty-state" hidden>
+    No items match your search.
+  </p>
+
+</main>
+
+<footer class="footer">
+
+  <div>
+    <a class="brand" href="index.html">
+      MRSPTU <span class="brand-accent">CampusFind</span>
+    </a>
+
+    <p>Helping campus belongings find their way home.</p>
+  </div>
+
+  <div class="creator-credit">
+    Created and developed by <strong>Mohit Joshi</strong>
+    <br>
+    © 2026 MRSPTU CampusFind. All rights reserved.
+    <br>
+    Original project and website design by Mohit Joshi.
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase-config.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

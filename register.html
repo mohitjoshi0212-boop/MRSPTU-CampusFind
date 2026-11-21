@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create Account | MRSPTU CampusFind</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">⌕</span>
+    MRSPTU <span class="brand-accent">CampusFind</span>
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="lost-items.html">Lost Items</a>
+    <a href="found-items.html">Found Items</a>
+  </nav>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+</header>
+
+<main class="form-page">
+
+  <div class="form-shell auth-shell">
+
+    <div class="form-heading">
+      <div class="eyebrow">CAMPUS COMMUNITY</div>
+      <h1>Create account</h1>
+      <p>Create an account to manage your reports.</p>
+    </div>
+
+    <form data-auth-form="register" class="auth-form">
+
+      <div class="field">
+        <label>Name</label>
+        <input
+          name="name"
+          required
+          autocomplete="name"
+          placeholder="Your name"
+        >
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          placeholder="you@example.com"
+        >
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input
+          name="password"
+          type="password"
+          required
+          minlength="6"
+          autocomplete="new-password"
+          placeholder="At least 6 characters"
+        >
+      </div>
+
+      <button class="btn btn-dark btn-large form-submit">
+        Create account
+      </button>
+
+    </form>
+
+    <p class="auth-switch">
+      Already have an account?
+      <a href="login.html">Log in</a>
+    </p>
+
+    <p class="cf-demo-warning">
+      Demo accounts are stored only in this browser.
+      Do not use a real password.
+    </p>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div>
+    <a class="brand" href="index.html">
+      MRSPTU <span class="brand-accent">CampusFind</span>
+    </a>
+
+    <p>Helping campus belongings find their way home.</p>
+
+    <p class="creator-credit">
+      Created and developed by <strong>Mohit Joshi</strong>
+    </p>
+
+    <span>
+      © 2026 MRSPTU CampusFind. All rights reserved.
+      Original project and website design by Mohit Joshi.
+    </span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase-config.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
